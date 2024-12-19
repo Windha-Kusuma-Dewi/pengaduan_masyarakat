@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    background: linear-gradient(135deg, #f97316, #f96e2a);
+    color: #333;
+    height: 100%;
+}
+
+.landing-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 100px 100px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #f97316;
+    margin-bottom: 20px;
+    padding-top: -10px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.field {
+    position: relative;
+}
+
+.field input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background: #fafafa;
+    color: #333;
+}
+
+.field input:focus {
+    border-color: #f97316;
+    box-shadow: 0 0 5px rgba(249, 115, 22, 0.5);
+}
+
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #aaa;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+button {
+    padding: 10px 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background: #16722b;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #0d561d;
+    transform: scale(1.05);
+}
+
+/* Additional Button for "Buat Akun" */
+.buat-akun {
+    background: #007bff;
+}
+
+.buat-akun:hover {
+    background: #0056b3;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
